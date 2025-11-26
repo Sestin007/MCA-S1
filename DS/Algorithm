@@ -1,0 +1,92 @@
+Here are the algorithms 
+
+1. Merging Two Arrays into a Third Array
+Algorithm:
+1. Read the size and elements of array A.
+2. Read the size and elements of array B.
+3. Create a new array C with a size equal to the sum of the sizes of A and B.
+4. Copy all elements of A into array C.
+5. Append all elements of B into array C, starting from the end of A.
+6. Display the merged array C.
+
+2. Matrix Operations (Addition & Subtraction)
+Algorithm:
+1. Read the order of the matrices (number of rows and columns).
+2. Input the elements of Matrix A and Matrix B.
+3. For each position (i, j), add A[i][j] and B[i][j] to get the sum matrix.
+4. For each position (i, j), subtract B[i][j] from A[i][j] to get the difference matrix.
+5. Display the resulting matrices.
+
+3. Stack Operations (Push, Pop, Display)
+Algorithm:
+1. Initialize an empty stack with a top pointer set to -1.
+2. To push an element onto the stack:
+    - Increment the top pointer.
+    - Insert the element at the new top position.
+3. To pop an element from the stack:
+    - Check if the stack is empty.
+    - If not, remove the element at the top position.
+    - Decrement the top pointer.
+4. To display the stack:
+    - Iterate from the top position to 0.
+    - Print each element.
+
+4. Structure Implementation
+Algorithm:
+1. Define a structure with the required fields (e.g., name, age).
+2. Declare structure variables.
+3. Read values into the structure members.
+4. Process the data if needed (e.g., calculate age group).
+5. Display the structure values.
+
+5. Linked List Implementation Using Stack
+Algorithm:
+1. Create a node structure with data and a next pointer.
+2. To push an element onto the stack:
+    - Create a new node with the given data.
+    - Set the next pointer of the new node to the current top node.
+    - Update the top node to the new node.
+3. To pop an element from the stack:
+    - Check if the stack is empty.
+    - If not, remove the top node and update the top node to the next node.
+4. To display the stack:
+    - Iterate through the nodes from top to bottom.
+    - Print each node's data.
+
+6. Singly Linked List
+Algorithm:
+1. Create a node structure with data and a next pointer.
+2. To insert a node:
+    - Create a new node with the given data.
+    - Traverse the list to find the insertion point.
+    - Update the next pointers to link the new node.
+3. To delete a node:
+    - Find the node to be deleted.
+    - Update the next pointers to bypass the node.
+4. To display the list:
+    - Iterate through the nodes.
+    - Print each node's data.
+
+7. Strongly Connected Components (SCC)
+Algorithm (Kosaraju):
+1. Perform DFS on the graph and push nodes into a stack after finishing each node.
+2. Reverse the graph (reverse all edges).
+3. Pop nodes from the stack one by one.
+4. For each popped node, perform DFS on the reversed graph.
+5. Nodes visited in each DFS form one SCC.
+
+8. Prim’s Algorithm
+Algorithm:
+1. Read the number of nodes and the cost matrix.
+2. Select any starting node as visited.
+3. Find the minimum cost edge from visited nodes to unvisited nodes.
+4. Add the edge to the Minimum Spanning Tree (MST) and mark the node as visited.
+5. Repeat until all nodes are included.
+
+9. Kruskal’s Algorithm
+Algorithm:
+1. Read the graph edges with weights.
+2. Sort all edges in ascending order of weight.
+3. Pick the smallest edge; if it forms no cycle, include it in the MST.
+4. Use Union-Find to check for cycles.
+5. Repeat until the MST has (n-1) edges.
